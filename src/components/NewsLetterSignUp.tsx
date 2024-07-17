@@ -5,11 +5,15 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
-const NewsLetterSignUp = (props) => {
+interface NewsLetterSignUpProps {
+	handleEmailSignUp: (email: string) => void;
+}
+
+const NewsLetterSignUp: React.FC<NewsLetterSignUpProps> = (props) => {
 	const { handleEmailSignUp } = props;
 	const [email, setEmail] = useState('');
 
-	const handleEmailText = (event) => {
+	const handleEmailText = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setEmail(event.target.value);
 	}
 
