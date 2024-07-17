@@ -4,15 +4,15 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
 const NewsLetterSignUp = () => {
-    return (
-        <Card>
-        <CardContent>
-          <Typography>
-            Hello World!
-          </Typography>
-        </CardContent>
-      </Card>
-    );
+	return (
+		<Card style={{ borderRadius: '10px', backgroundColor: '#00c394' }}>
+			<CardContent>
+				<Typography>
+						Hello World!
+				</Typography>
+			</CardContent>
+		</Card>
+	);
 }
 
 export default NewsLetterSignUp;
