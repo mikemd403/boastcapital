@@ -1,12 +1,18 @@
+import { useState } from 'react';
 import NewsLetterSignUp from './components/NewsLetterSignUp'
 import './App.css'
 
 function App() {
+  const [isNewsletterSignedUp, setNewsletterSignUp] = useState(false);
 
   return (
-    <div className='news-letter-sign-up'>
-      <NewsLetterSignUp />
-    </div>
+    <>
+      {!isNewsletterSignedUp &&
+        <div className='news-letter-sign-up'>
+          <NewsLetterSignUp />
+        </div>
+      }
+    </>
   )
 }
 
