@@ -130,7 +130,7 @@
   font-weight: 600 !important;
   color: #fff !important;
   font-family: proxima-nova,sans-serif !important;
-  border: none;
+  border: none !important;
 }
 
 .news-letter-sign-up-button:hover {
