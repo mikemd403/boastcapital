@@ -45,6 +45,7 @@ function App() {
             className="news-letter-sign-up-button"
             variant="outlined"
             onClick={handleNewsLetterClose}
+            data-test="news-letter-sign-up-button"
           >
           <Typography>Newsletter</Typography>
         </Button>

@@ -50,21 +50,21 @@ const NewsLetterSignUp: React.FC<NewsLetterSignUpProps> = (props) => {
 	}
 
 	return (
-		<Card className="news-letter-sign-up-card">
+		<Card className="news-letter-sign-up-card" data-test="news-letter-sign-up-card">
 			<CardContent className="news-letter-sign-up-card-content">
         <div className="news-letter-sign-up-card-header">
           <Typography>
             Boast Newsletter
           </Typography>
-          <IconButton style={{ marginLeft: '5px' }} onClick={handleNewsLetterClose}>
+          <IconButton style={{ marginLeft: '5px' }} onClick={handleNewsLetterClose} data-test="news-letter-close-button">
             <KeyboardArrowDownIcon style={{ fill: '#031417' }}  />
           </IconButton>
         </div>
-				<TextField className="news-letter-sign-up-card-textfield" variant="outlined" placeholder="example@boast.com" value={email} onChange={handleEmailText} />
-        {emailInvalid && <Typography className="news-letter-sign-up-card-error">Invalid Email</Typography>}
+				<TextField className="news-letter-sign-up-card-textfield" variant="outlined" placeholder="example@boast.com" value={email} onChange={handleEmailText} data-test="news-letter-sign-up-card-textfield"/>
+        {emailInvalid && <Typography className="news-letter-sign-up-card-error" data-test="news-letter-sign-up-card-error">Invalid Email</Typography>}
 			</CardContent>
       {!isLoading &&
-        <Button className="news-letter-sign-up-card-button" variant="outlined" onClick={handleSignUp}>
+        <Button className="news-letter-sign-up-card-button" variant="outlined" onClick={handleSignUp} data-test="news-letter-sign-up-card-button">
           <Typography>Sign Up</Typography>
         </Button>
       }

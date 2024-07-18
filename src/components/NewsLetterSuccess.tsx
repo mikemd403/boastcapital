@@ -24,7 +24,7 @@ const NewsLetterSuccess: React.FC<NewsLetterSuccessProps> = (props) => {
 	return (
 		<Card style={{ borderRadius: '10px', backgroundColor: '#00c394' }}>
 			<CardContent>
-				<Typography className="news-letter-success-message">Thank you for signing up! 🎉 {timer} </Typography>
+				<Typography className="news-letter-success-message" data-test="news-letter-success-message">Thank you for signing up! 🎉 {timer} </Typography>
 			</CardContent>
 		</Card>
 	);
