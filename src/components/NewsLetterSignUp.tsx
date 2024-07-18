@@ -12,22 +12,32 @@ interface NewsLetterSignUpProps {
 const NewsLetterSignUp: React.FC<NewsLetterSignUpProps> = (props) => {
 	const { handleEmailSignUp } = props;
 	const [email, setEmail] = useState('');
+  const [emailInvalid, setEmailInvalid] = useState(false);
 
 	const handleEmailText = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setEmail(event.target.value);
 	}
 
 	const handleSignUp = () => {
-		handleEmailSignUp(email)
+    // Email Validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const isEmailValid = emailRegex.test(email);
+    if(isEmailValid) {
+      setEmailInvalid(false);
+		handleEmailSignUp(email);
+    } else {
+      setEmailInvalid(true);
+    }
 	}
 
 	return (
 		<Card className="news-letter-sign-up-card">
 			<CardContent>
 				<Typography className="news-letter-sign-up-card-header">
-						Boast Newsletter
+					Boast Newsletter
 				</Typography>
 				<TextField className="news-letter-sign-up-card-textfield" variant="outlined" placeholder="example@boast.com" value={email} onChange={handleEmailText} />
+        {emailInvalid && <Typography className="news-letter-sign-up-card-error">Invalid Email</Typography>}
 			</CardContent>
 			<Button className="news-letter-sign-up-card-button" variant="outlined" onClick={handleSignUp}><Typography>Sign Up</Typography></Button>
 		</Card>

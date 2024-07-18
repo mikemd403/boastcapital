@@ -96,3 +96,9 @@
 .news-letter-sign-up-card-textfield fieldset {
   border-color: #031417 !important;
 }
+
+.news-letter-sign-up-card-error {
+  font-size: 14px !important;
+  color: #f50959 !important;
+  font-family: "Inter", sans-serif !important;
+}
