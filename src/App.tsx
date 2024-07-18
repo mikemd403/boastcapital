@@ -10,9 +10,10 @@ function App() {
   const [isNewsletterSuccess, setNewsletterSuccess] = useState(false);
   const [isNewsletterClose, setNewsletterClose] = useState(false);
   
-  const handleEmailSignUp = (email) => {
+  const handleEmailSignUp = (email: string) => {
     setNewsletterSignUp(!isNewsletterSignedUp);
     setNewsletterSuccess(true);
+    console.log(email);
   };
 
   const handleNewsLetterSuccess = () => {
