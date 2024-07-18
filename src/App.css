@@ -102,3 +102,12 @@
   color: #f50959 !important;
   font-family: "Inter", sans-serif !important;
 }
+
+.news-letter-success-message {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 27.9px !important;
+  text-align: center !important;
+  font-family: inter, sans-serif !important;
+  color: #fff !important;
+}
