@@ -9,10 +9,11 @@ import IconButton from '@mui/material/IconButton';
 
 interface NewsLetterSignUpProps {
 	handleEmailSignUp: (email: string) => void;
+  handleNewsLetterClose: () => void;
 }
 
 const NewsLetterSignUp: React.FC<NewsLetterSignUpProps> = (props) => {
-	const { handleEmailSignUp } = props;
+	const { handleEmailSignUp, handleNewsLetterClose } = props;
 	const [email, setEmail] = useState('');
   const [emailInvalid, setEmailInvalid] = useState(false);
 
@@ -36,10 +37,10 @@ const NewsLetterSignUp: React.FC<NewsLetterSignUpProps> = (props) => {
 		<Card className="news-letter-sign-up-card">
 			<CardContent className="news-letter-sign-up-card-content">
         <div className="news-letter-sign-up-card-header">
-          <Typography >
+          <Typography>
             Boast Newsletter
           </Typography>
-          <IconButton style={{ marginLeft: '5px' }}>
+          <IconButton style={{ marginLeft: '5px' }} onClick={handleNewsLetterClose}>
             <KeyboardArrowDownIcon style={{ fill: '#031417' }}  />
           </IconButton>
         </div>

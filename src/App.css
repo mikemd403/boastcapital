@@ -122,3 +122,18 @@
   font-family: inter, sans-serif !important;
   color: #fff !important;
 }
+
+.news-letter-sign-up-button {
+  background-color: #031417 !important;
+  margin-bottom: 10px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  font-family: proxima-nova,sans-serif !important;
+  border: none;
+}
+
+.news-letter-sign-up-button:hover {
+  background-color: #00c394 !important;
+  border: none !important;
+}
