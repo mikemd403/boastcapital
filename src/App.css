@@ -55,8 +55,19 @@
   border-radius: 10px !important;
 }
 
+.news-letter-sign-up-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .news-letter-sign-up-card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin-bottom: 10px !important;
+}
+
+.news-letter-sign-up-card-header p {
   font-size: 24px !important;
   color: #00c394 !important;
   font-weight: 600 !important;
