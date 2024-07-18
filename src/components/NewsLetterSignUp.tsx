@@ -22,14 +22,14 @@ const NewsLetterSignUp: React.FC<NewsLetterSignUpProps> = (props) => {
 	}
 
 	return (
-		<Card className="news-letter-sign-up-card" style={{ borderRadius: '10px', backgroundColor: '#00c394' }}>
+		<Card className="news-letter-sign-up-card">
 			<CardContent>
-				<Typography>
-						Sign Up to Newsletter
+				<Typography className="news-letter-sign-up-card-header">
+						Boast Newsletter
 				</Typography>
-				<TextField id="newsletter-signup" variant="outlined" placeholder="example@boast.com" value={email} onChange={handleEmailText} />
+				<TextField className="news-letter-sign-up-card-textfield" variant="outlined" placeholder="example@boast.com" value={email} onChange={handleEmailText} />
 			</CardContent>
-			<Button style={{ backgroundColor: '#031417', marginBottom: '10px' }} variant="outlined" onClick={handleSignUp}><Typography>Sign Up</Typography></Button>
+			<Button className="news-letter-sign-up-card-button" variant="outlined" onClick={handleSignUp}><Typography>Sign Up</Typography></Button>
 		</Card>
 	);
 }

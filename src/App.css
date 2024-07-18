@@ -49,3 +49,50 @@
   margin-right: 20px;
   z-index: 50;
 }
+
+.news-letter-sign-up-card {
+  background-color: #f0f6f7 !important;
+  border-radius: 10px !important;
+}
+
+.news-letter-sign-up-card-header {
+  margin-bottom: 10px !important;
+  font-size: 24px !important;
+  color: #00c394 !important;
+  font-weight: 600 !important;
+  font-family: inter, sans-serif !important;
+}
+
+.news-letter-sign-up-card-button {
+  background-color: #031417 !important;
+  margin-bottom: 10px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  font-family: proxima-nova,sans-serif !important;
+}
+
+.news-letter-sign-up-card-button:hover {
+  background-color: #00c394 !important;
+  border: none !important;
+}
+
+.news-letter-sign-up-card-textfield {
+  font-family: proxima-nova,sans-serif !important;
+}
+
+.news-letter-sign-up-card-textfield input {
+  color: #666 !important;
+  font-family: proxima-nova,sans-serif !important;
+  border-radius: 4px !important;
+  border: 1.5px solid #c1c8c9 !important;
+  padding: 8px 12px !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  text-align: left !important;
+}
+
+.news-letter-sign-up-card-textfield fieldset {
+  border-color: #031417 !important;
+}
