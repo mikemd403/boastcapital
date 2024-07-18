@@ -1,3 +1,17 @@
+# Boast
+
+Added to mainpage a newsletter card to sign up.
+
+# Cypress Framework
+
+Added Cypress testing for the newsletter card.
+
+To run:
+
+npm run cy:open
+
+Follow GUI for e2e testing.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
